@@ -5,10 +5,10 @@ class Question
     @num_2 = rand(0..20)
     @answer = @num_1 + @num_2
     puts "#{player}: What does #{@num_1} plus #{@num_2} equal?"
-    correct_answer
+    answer?
   end
 
-  def correct_answer
+  def answer?
     @player_answer = gets.chomp
     if @player_answer.to_i == @answer
       puts "YES! You are correct."

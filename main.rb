@@ -21,11 +21,7 @@ while game.player_1.life > 0 and game.player_2.life > 0 do
   
 end
 
-if game.player_1.life == 0
-  puts "#{player2.name} wins with a score of #{player2.life}/3"
-elsif game.player_2.life == 0
-  puts "#{player1.name} wins with a score of #{player1.life}/3"
-end
-
+result = game.player_1.life == 0 ? "#{player2.name} wins with a score of #{player2.life}/3" : "#{player1.name} wins with a score of #{player1.life}/3"
+puts result
 puts "----- GAME OVER -----"
 puts "Good bye!"

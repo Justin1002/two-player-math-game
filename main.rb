@@ -19,12 +19,12 @@ while game.player_1.life > 0 and game.player_2.life > 0 do
   game.report_life
   game.change_player
   
-  if game.player_1.life == 0
-    puts "#{player2.name} wins with a score of #{player2.life}/3"
-  elsif game.player_2.life == 0
-    puts "#{player1.name} wins with a score of #{player1.life}/3"
-  end
+end
 
+if game.player_1.life == 0
+  puts "#{player2.name} wins with a score of #{player2.life}/3"
+elsif game.player_2.life == 0
+  puts "#{player1.name} wins with a score of #{player1.life}/3"
 end
 
 puts "----- GAME OVER -----"
